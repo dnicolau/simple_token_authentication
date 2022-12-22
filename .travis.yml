@@ -9,11 +9,14 @@ rvm:
   - "1.9.3"
   - "2.6.3"
   - "2.7.6"
+  - "2.7.7"
   - ruby-head
 matrix:
   allow_failures:
     - rvm: ruby-head
   exclude:
+    - rvm: 2.7.7
+      gemfile: gemfiles/rails_7_devise_4.gemfile
     - rvm: 2.7.6
       gemfile: gemfiles/rails_7_devise_4.gemfile
     - rvm: 1.9.3
